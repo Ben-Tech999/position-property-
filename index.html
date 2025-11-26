@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position: static</title>
+    <style>
+        .box {
+            position: static; /* This is the default. */
+            background-color: #ff6347;
+            width: 150px; height: 150px;
+            top: 50px; /* <--- This line will be IGNORED */
+            left: 50px; /* <--- This line will be IGNORED */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">This box is static (default). It will not move using top/left.</div>
+    <p>This paragraph starts right after the box.</p>
+</body>
+</html> 

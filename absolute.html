@@ -1,0 +1,28 @@
+<style>
+    .parent {
+        position: relative; /* <--- This makes the parent the reference point */
+        width: 400px;
+        height: 250px;
+        border: 3px solid #a52a2a;
+        margin: 50px;
+        padding: 10px;
+    }
+    .absolute-box {
+        position: absolute;
+        background-color: #daa520;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        top: 0;   /* Positions 0px from the top of the PARENT */
+        right: 0; /* Positions 0px from the right of the PARENT */
+    }
+</style>
+<body>
+    <h1>Position: absolute</h1>
+    <p>The yellow box is 'absolute' but its parent container is 'relative'.</p>
+    <div class="parent">
+        <h2>Parent (position: relative)</h2>
+        <div class="absolute-box">Child (position: absolute)</div>
+        <p>This text is inside the parent. The child box is positioned relative to the parent's corners, not the page.</p>
+    </div>
+</body>

@@ -1,0 +1,18 @@
+<style>
+    .box {
+        position: relative;
+        background-color: #4682b4;
+        color: white;
+        padding: 10px;
+        width: 200px; height: 100px;
+        top: 30px;  /* Moves DOWN 30px from its normal position */
+        left: 30px; /* Moves RIGHT 30px from its normal position */
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <h1>Position: relative</h1>
+    <p>This is content before the box.</p>
+    <div class="box">This box is relative. It moved, but its original space is still reserved, pushing the content below it down.</div>
+    <p>This content appears right after the box's original, reserved space.</p>
+</body>
